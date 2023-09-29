@@ -14,6 +14,7 @@
     ],
     "license": "ISC",
     "scripts": {
+        "deploy": "gatsby build --prefix-paths && gh-pages -d public",
         "develop": "gatsby develop",
         "start": "gatsby develop",
         "build": "gatsby build",
@@ -37,5 +38,8 @@
         "react-helmet": "^6.1.0",
         "react-icons": "^4.8.0",
         "react-tooltip": "^5.11.1"
+    },
+    "devDependencies": {
+        "gh-pages": "^6.0.0"
     }
 }
